@@ -3,10 +3,11 @@ header{
   background: rgb(251, 249, 255);
   padding: 0;
   border-bottom: 2px solid #2c29e7;
+  background-color: #0e0505;
 }
 
 a{
-  color: #2c29e7;
+  color: #ffffff;
 }
 
 a:hover{
