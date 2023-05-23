@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProductsService } from 'src/app/services/products.service';
 import { Products } from 'src/app/shared/models/Products';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,16 +12,16 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class HomeComponent {
 
    products:Products[] = [];
-  form: FormGroup;
 
-  constructor(private productsService:ProductsService,private fb: FormBuilder) {
-    this.products = productsService.getAll();
 
-    this.form = this.fb.group({
-      rating: ['', Validators.required],
+   constructor(private productsService:ProductsService, activatedRoute:ActivatedRoute) {
+    activatedRoute.params.subscribe((params) => {
+      if(params.searchTerm)
+      this.products = this.productsService.getAllProductsbySerach(params.searchTerm);
+      else
+      this.products = productsService.getAll();
     })
 
-
-   }
+  }
 
 }
