@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 import { Products } from 'src/app/shared/models/Products';
 
@@ -12,11 +13,18 @@ export class ProductsPageComponent {
 
   products!:Products;
 
-  constructor(activatedRoute:ActivatedRoute, productsService:ProductsService){
+  constructor(activatedRoute:ActivatedRoute, productsService:ProductsService ,
+    private cartService:CartService, private router:Router){
     activatedRoute.params.subscribe((params) => {
       if(params.id)
       this.products = productsService.getProductsById(params.id);
     })
+
+  }
+
+  addToCart(){
+    this.cartService.addToCart(this.products);
+    this.router.navigateByUrl('/cart-page');
 
   }
 

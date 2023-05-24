@@ -7,6 +7,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { SearchComponent } from './components/partials/search/search.component';
 import { TagsComponent } from './components/partials/tags/tags.component';
 import { ProductsPageComponent } from './components/pages/products-page/products-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { TitleComponent } from './components/partials/title/title.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProductsPageComponent } from './components/pages/products-page/products
     HomeComponent,
     SearchComponent,
     TagsComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    CartPageComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
