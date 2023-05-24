@@ -9,6 +9,7 @@ import { TagsComponent } from './components/partials/tags/tags.component';
 import { ProductsPageComponent } from './components/pages/products-page/products-page.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
+import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TitleComponent } from './components/partials/title/title.component';
     TagsComponent,
     ProductsPageComponent,
     CartPageComponent,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
