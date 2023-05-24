@@ -1,0 +1,34 @@
+<div class="container">
+  <img [src]="products.imageUrl" [alt]="products.name"/>
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{products.name}}
+      </span>
+
+      <div class="tags">
+        <a *ngFor="let tag of products.tags" routerLink="/tag/{{tag}}">
+          {{tag}}
+        </a>
+      </div>
+      <div class="color">
+        <span>
+          {{products.color | currency}}
+        </span>
+      </div>
+      <div class="description">
+        <span>
+          {{products.description }}
+        </span>
+      </div>
+
+
+    <div class="price">
+      <span>
+        {{products.price | currency}}
+      </span>
+    </div>
+
+    <button>Buy Now! Add To Cart</button>
+
+</div>

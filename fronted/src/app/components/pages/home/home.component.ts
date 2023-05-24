@@ -18,6 +18,8 @@ export class HomeComponent {
     activatedRoute.params.subscribe((params) => {
       if(params.searchTerm)
       this.products = this.productsService.getAllProductsbySerach(params.searchTerm);
+      else if (params.tag)
+      this.products = this.productsService.getAllProductsByTag(params.tag);
       else
       this.products = productsService.getAll();
     })

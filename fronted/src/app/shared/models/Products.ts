@@ -6,4 +6,5 @@ export class Products{
   imageUrl!: string;
   starts!:number;
   color!: string;
+  description!: string;
 }
