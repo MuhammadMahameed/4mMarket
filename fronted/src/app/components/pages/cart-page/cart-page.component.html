@@ -25,8 +25,8 @@ resetLinkText="Go To Home"
         <option>3</option>
       </select>
       </div>
-      <div>
-        {{cartItem.price | currency}}
+      <div class="fa fa-shekel teal-color" style="font-size: 20px;">
+        {{cartItem.price}}
       </div>
 
       <div>
@@ -39,7 +39,7 @@ resetLinkText="Go To Home"
   <div class="checkout">
     <div>
       <div class="products-count">{{cart.totalCount}}</div>
-      <div class="total-price">{{cart.totalPrice|currency}}</div>
+      <div class="fa fa-shekel teal-color" style="font-weight: bold; font-size: 25px;">{{cart.totalPrice}}</div>
     </div>
 
     <a routerLink="/checkout">Advance to Checkout</a>
