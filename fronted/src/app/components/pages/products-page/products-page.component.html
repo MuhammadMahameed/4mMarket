@@ -28,12 +28,14 @@
       </div>
 
 
-    <div class="price">
+    <div class="fa fa-shekel teal-color" style="font-weight: bold; font-size: 25px;">
       <span>
-        {{products.price | currency}}
+        {{products.price}}
       </span>
     </div>
+    <div class="button">
+      <button (click)="addToCart()">Buy Now! Add To Cart</button>
+    </div>
 
-    <button (click)="addToCart()">Buy Now! Add To Cart</button>
 
 </div>

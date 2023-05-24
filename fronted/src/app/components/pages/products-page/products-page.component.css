@@ -72,13 +72,7 @@ button{
 button:hover{
   opacity: 0.9;
   cursor: pointer;
-}
 
-.price{
-  font-size: 1.5rem;
-  margin: 1rem 1rem 1rem 0;
-  color: green;
-  font-weight: bold;
 }
 
 .description{
