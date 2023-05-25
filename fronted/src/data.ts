@@ -159,7 +159,7 @@ export const products: Products[] = [
         id: '15',
         name:'Apple MacBook Pro',
         price:4500,
-        tags:['All','Phones','Apple'] ,
+        tags:['All','Laptops','Apple'] ,
         imageUrl:'assets/15.jpg' ,
         starts:4.9,
         color:'Silver' ,
@@ -172,7 +172,7 @@ export const products: Products[] = [
 export const samble_tags:Tag[]= [
   {name: 'All', count: 13},
   {name: 'Laptops', count: 4},
-  {name: 'Phones', count: 3},
+  {name: 'Phones', count: 4},
   {name: 'Screens', count: 3},
   {name: 'accessories', count: 3},
   {name: 'Apple', count: 2},
