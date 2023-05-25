@@ -1,9 +1,11 @@
   <app-not-found
-  [visible]="!products.id"
+  [visible]="!products"
   notFoundMessage="Product Not Found"
   resetLinkText="Back To Home">
 </app-not-found>
-<div *ngIf="products.id" class="container"></div>
+<div *ngIf="products" class="container">
+
+</div>
   <img [src]="products.imageUrl" [alt]="products.name"/>
   <div class="details">
     <div class="header">
@@ -38,4 +40,3 @@
     </div>
 
 
-</div>
