@@ -168,8 +168,8 @@ export const sample_products: any[] = [
 ]
 
 export const samble_tags:any[]= [
-  {name: 'All', count: 13},
-  {name: 'Laptops', count: 4},
+  {name: 'All', count: 15},
+  {name: 'Laptops', count: 5},
   {name: 'Phones', count: 4},
   {name: 'Screens', count: 3},
   {name: 'accessories', count: 3},
