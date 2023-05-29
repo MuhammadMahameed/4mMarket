@@ -1,0 +1,60 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3rem;
+  }
+
+  .details{
+    width: 28rem;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .error-list{
+    color: red;
+  }
+
+  .input-container{
+    color: rgb(28, 28, 120);
+    font-size: x-large;
+    font-weight: 200;
+    font-weight: bold;
+  }
+
+  button{
+    color: grey;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    border-radius: 0 10rem 10rem 0;
+    border: none;
+    background-color: #0c083d;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    outline: none;
+  }
+
+
+  button:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  input{
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: #f1f1f1;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+  }
+
+

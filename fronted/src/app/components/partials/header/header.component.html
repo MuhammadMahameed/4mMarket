@@ -1,27 +1,35 @@
 
 <header>
-    <div class="container">
-      <a routerLink="/" class="logo">4m Market</a>
+  <div class="container">
 
-      <nav>
-        <ul>
-          <li>
-            <a routerLink="/login">Login</a>
-          </li>
-          <li class="menu-container">
-            <a routerLink="/dashboard">Muhammad</a>
-            <div class="menu">
-              <a routerLink="/profile">Profile</a>
-              <a routerLink="/orders">Orders</a>
-              <a>Logout</a>
-            </div>
-          </li>
-          <li>
-            <a routerLink="/cart-page">
-              Cart <span *ngIf="cartAmount">{{cartAmount}}></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <img routerLink="/" src="assets/4m-market-logo.png" alt="logo">
+
+
+    <nav>
+      <ul>
+        <li *ngIf="!isAuthentication">
+          <a routerLink="/login">Login</a>
+        </li>
+
+        <li *ngIf="isAuthentication" class="menu-container">
+          <a routerLink="/dashboard">{{user.name}}</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a (click)="logout()">Logout</a>
+          </div>
+        </li>
+
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span *ngIf="cartAmount">{{cartAmount}}></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+

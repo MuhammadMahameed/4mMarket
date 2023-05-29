@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 import { Products } from 'src/app/shared/models/Products';
+import { User } from 'src/app/shared/models/User';
 
 @Component({
   selector: 'app-products-page',
@@ -12,6 +13,15 @@ import { Products } from 'src/app/shared/models/Products';
 export class ProductsPageComponent {
 
   products!:Products;
+  user!:User;
+  @Input()
+  visible = false;
+  @Input()
+  notFoundMessage = "Nothing Found :(";
+  @Input()
+  resetLinkText = "Reset";
+  @Input()
+  resetLinkRoute = "/";
 
   constructor(activatedRoute:ActivatedRoute, productsService:ProductsService ,
     private cartService:CartService, private router:Router){
@@ -29,5 +39,10 @@ export class ProductsPageComponent {
     this.router.navigateByUrl('/cart-page');
 
   }
+  get isAuthentication(){
+    return this.user.token;
+
+  }
+
 
 }

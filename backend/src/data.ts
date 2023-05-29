@@ -157,7 +157,7 @@ export const sample_products: any[] = [
         id: '15',
         name:'Apple MacBook Pro',
         price:4500,
-        tags:['All','Phones','Apple'] ,
+        tags:['All','Laptops','Apple'] ,
         imageUrl:'assets/15.jpg' ,
         starts:4.9,
         color:'Silver' ,
@@ -170,7 +170,7 @@ export const sample_products: any[] = [
 export const samble_tags:any[]= [
   {name: 'All', count: 13},
   {name: 'Laptops', count: 4},
-  {name: 'Phones', count: 3},
+  {name: 'Phones', count: 4},
   {name: 'Screens', count: 3},
   {name: 'accessories', count: 3},
   {name: 'Apple', count: 2},
@@ -182,3 +182,35 @@ export const samble_tags:any[]= [
   {name: 'DELL', count: 2},
   {name: 'HP', count: 1},
 ]
+
+
+export const sample_users: any[] = [
+  {
+    id :"1",
+    name: "Muhammad Mahameed",
+    email: "muhammadmahamid2609@gmail.com",
+    password: "26091996",
+    address: "israel",
+    isAdmin: true,
+  },
+  {
+    id :"2",
+    name: "Mahmoud Mahameed",
+    email: "MahmoudMahameed@gmail.com",
+    password: "180698",
+    address: "israel",
+    isAdmin: false,
+  }
+  ,
+  {
+    id :"3",
+    name: "Amit kistel",
+    email: "Amit123@gmail.com",
+    password: "12345",
+    address: "israel",
+    isAdmin: false,
+  },
+
+
+
+];

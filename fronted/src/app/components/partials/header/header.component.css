@@ -1,13 +1,17 @@
-header{
+   header{
   position: relative;
-  background: rgb(251, 249, 255);
+  background: rgb(255, 255, 255);
   padding: 0;
   border-bottom: 2px solid #2c29e7;
-  background-color: #0e0505;
+  top: 10px;
 }
 
 a{
-  color: #ffffff;
+  color: #0e0e55;
+  font-weight: bold;
+  position: relative;
+  left:1600px;
+
 }
 
 a:hover{
@@ -43,7 +47,7 @@ a span{
   color: rgb(255, 255, 255);
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;
-  font-size:0.9rem;
+  font-size:1rem;
 }
 
 .menu-container{
@@ -53,7 +57,7 @@ a span{
 .menu{
   position:absolute;
   z-index:1;
-  background:rgba(8, 8, 8, 0.719);
+  background:rgba(245, 245, 245, 0.719);
   display: none;
 }
 
@@ -65,3 +69,20 @@ a span{
   width: 100%;
   min-width:7rem;
 }
+
+
+img{
+
+  position: absolute;
+  left: 100px;
+  width:220px;
+  top: -35px;
+
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(239, 241, 242, 0.5);
+}
+
+
+
