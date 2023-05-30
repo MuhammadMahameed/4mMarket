@@ -19,6 +19,7 @@ import { DefaultButtonComponent } from './components/partials/default-button/def
 import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
 import { TextInputComponent } from './components/partials/text-input/text-input.component';
 import {InputContainerComponent} from './components/partials/input-contanier/input-contanier.component';
+import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 
 
 
@@ -39,7 +40,8 @@ import {InputContainerComponent} from './components/partials/input-contanier/inp
     DefaultButtonComponent,
     InputValidationComponent,
     TextInputComponent,
-    InputContainerComponent
+    InputContainerComponent,
+    RegisterPageComponent
 
   ],
   imports: [
