@@ -74,3 +74,4 @@ router.get("/:productId", asyncHandler(async (req,res) => {
 
 
   export default router;
+  

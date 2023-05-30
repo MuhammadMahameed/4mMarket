@@ -2,7 +2,8 @@ import { Router } from "express";
 import { sample_users } from "../data";
 import jwt  from "jsonwebtoken";
 import asyncHandler from "express-async-handler";
-import { UserModel } from "../models/user.model";
+import {  User, UserModel } from "../models/user.model";
+import { HTTP_BAD_REQUEST } from "../cons/http_status";
 
 
 const router = Router();
@@ -27,11 +28,11 @@ router.post("/login",asyncHandler( async (req, res) => {
     res.send(generateTokenReponse(user));
    }
    else{
-     const BAD_REQUEST = 400;
-     res.status(BAD_REQUEST).send("Username or password is invalid!");
+    
+     res.status(HTTP_BAD_REQUEST).send("Username or password is invalid!");
    }
 
-}))
+}));
 
   const generateTokenReponse = (user : any) => {
     const token = jwt.sign({

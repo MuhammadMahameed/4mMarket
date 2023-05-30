@@ -15,6 +15,12 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { DefaultButtonComponent } from './components/partials/default-button/default-button.component';
+import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
+import { TextInputComponent } from './components/partials/text-input/text-input.component';
+import {InputContainerComponent} from './components/partials/input-contanier/input-contanier.component';
+
+
 
 
 
@@ -30,6 +36,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TitleComponent,
     NotFoundComponent,
     LoginPageComponent,
+    DefaultButtonComponent,
+    InputValidationComponent,
+    TextInputComponent,
+    InputContainerComponent
 
   ],
   imports: [
