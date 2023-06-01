@@ -22,6 +22,10 @@ export class UserService {
     this.userObservable = this.userSubject.asObservable();
   }
 
+  public get currentUser():User{
+    return this.userSubject.value;
+  }
+
 
   login(userlogin: IUserLogin):Observable<User>{
    return this.httpclinet.post<User>(USER_LOGIN_URL, userlogin).pipe(

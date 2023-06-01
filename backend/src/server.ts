@@ -21,7 +21,7 @@ app.use(cors({
 }));
 
 app.use("/api/products",productsRouter);
-app.use("/api/users",userRouter)
+app.use("/api/users",userRouter);
 
 const port = 5000;
 

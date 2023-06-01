@@ -10,7 +10,7 @@ import { ProductsPageComponent } from './components/pages/products-page/products
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
-import {HttpClientModule} from'@angular/common/http';
+import { HttpClientModule} from'@angular/common/http';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
@@ -20,6 +20,8 @@ import { InputValidationComponent } from './components/partials/input-validation
 import { TextInputComponent } from './components/partials/text-input/text-input.component';
 import {InputContainerComponent} from './components/partials/input-contanier/input-contanier.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
+import { CheckoutPageComponent } from './components/pages/checkout-page/chekout-page.component';
+import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
 
 
 
@@ -41,7 +43,9 @@ import { RegisterPageComponent } from './components/pages/register-page/register
     InputValidationComponent,
     TextInputComponent,
     InputContainerComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent
 
   ],
   imports: [
